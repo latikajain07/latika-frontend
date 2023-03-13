@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+<body>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        </style>
+<div class="container">
+    <h3>List Of State</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>COUNTRY_ID</th>
+                <th>COUNTRY_Name</th>
+                <th>COUNTRY_SHORT_NAME</th>
+                <th>STATE_ID</th>
+                <th>STATE_Name</th>
+                <th>STATE_SHORT_NAME</th>
+                <th>Update</th>
+                <th>Delete</th>
+
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let country of state">
+                <th>{{country.c_Id}}</th>
+                <th>{{country.c_Name}}</th>
+                <th>{{country.c_Short_Name}}</th>
+                <th>{{country.s_Id}}</th>
+                <th>{{country.s_Name}}</th>
+                <th>{{country.s_Short_Name}}</th>
+                <th><button>Update</button></th>
+                <th><button>Delete</button></th>
+
+            </tr> 
+
+
+
+
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
+
+
