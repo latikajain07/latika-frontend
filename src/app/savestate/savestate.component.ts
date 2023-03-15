@@ -15,7 +15,7 @@ public user ={
 };
 
   ngOnInit() {
-    
+                          
   }
 
 }
